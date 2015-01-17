@@ -31,6 +31,7 @@ SECRET_KEY = '(g9&(6=cijx5pdqb30*kch2rwdwf6fqix=5$t4fsba@&d6+u29'
 if 'local' in hostname:
     DEBUG = True
     TEMPLATE_DEBUG = True
+    ALLOWED_HOSTS = ['scheduletweet.herokuapp.com']
 else:
     DEBUG = False
     TEMPLATE_DEBUG = False
