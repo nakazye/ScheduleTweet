@@ -25,7 +25,7 @@ STATICFILES_DIRS = (os.path.join(SITE_ROOT, 'staticfiles'), )
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(g9&(6=cijx5pdqb30*kch2rwdwf6fqix=5$t4fsba@&d6+u29'
+SECRET_KEY = 'xxx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 ALLOWED_HOSTS = ['*']
@@ -35,9 +35,6 @@ if 'local' in hostname:
 else:
     DEBUG = False
     TEMPLATE_DEBUG = False
-
-
-TEMPLATE_DEBUG = True
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     "django.contrib.auth.context_processors.auth",
@@ -58,12 +55,12 @@ AUTHENTICATION_BACKENDS = (
 )
 
 LOGIN_REDIRECT_URL = '/'
-SOCIAL_AUTH_TWITTER_KEY = 'zbJ98ZCTitjdTDtf6Y0wjFA6j'
-SOCIAL_AUTH_TWITTER_SECRET = 'BSZn8c349GJ8dpcpghAdjaU8UzD49NtUfwsX6knm1X5M2YCr6b'
-SOCIAL_AUTH_TWITTER_KEY_FOR_POST = '8Ar71vacawVAr9PpXFNXIM9kI'
-SOCIAL_AUTH_TWITTER_SECRET_FOR_POST = 'SlUBGJnZr2sHVPSbadzDl6g8H8go2FGkWy0XZwLNX2XWPKQVys'
-SOCIAL_AUTH_TWITTER_ACCESS_FOR_POST = '2985452046-AwydKTBrgiq8isdFkxbpHolAxgaPirmH94o9taY'
-SOCIAL_AUTH_TWITTER_ACCESS_SECRET_FOR_POST = '6bPGB52sdhFYY276bby6TW54L4h7BxCDTxTy5acc58YA8'
+SOCIAL_AUTH_TWITTER_KEY = 'xxx'
+SOCIAL_AUTH_TWITTER_SECRET = 'xxx'
+SOCIAL_AUTH_TWITTER_KEY_FOR_POST = 'xxx'
+SOCIAL_AUTH_TWITTER_SECRET_FOR_POST = 'xxx'
+SOCIAL_AUTH_TWITTER_ACCESS_FOR_POST = 'xxx'
+SOCIAL_AUTH_TWITTER_ACCESS_SECRET_FOR_POST = 'xxx'
 
 # Application definition
 INSTALLED_APPS = (
