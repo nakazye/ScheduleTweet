@@ -28,10 +28,10 @@ TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 SECRET_KEY = '(g9&(6=cijx5pdqb30*kch2rwdwf6fqix=5$t4fsba@&d6+u29'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+ALLOWED_HOSTS = ''
 if 'local' in hostname:
     DEBUG = True
     TEMPLATE_DEBUG = True
-    ALLOWED_HOSTS = ['scheduletweet.herokuapp.com']
 else:
     DEBUG = False
     TEMPLATE_DEBUG = False
