@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ScheduleTweet</title>
+    </head>
+    <body>
+        <p>このサービスは、TL上に日付っぽいツイートが流れたらお知らせするサービスだよ</p>
+        {% if isLogin %}
+        <p>連携完了したよ！日付っぽいツイートが流れたらお知らせするね！</p>
+        {% else %}
+        <form action="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" method="get">
+            {% csrf_token %}
+            <input type="submit" value="Twitter連携！" />
+        </form>        
+        {% endif %}
+    </body>
+</html>
